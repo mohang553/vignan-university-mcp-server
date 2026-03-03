@@ -20,7 +20,7 @@ INDEX_NAME       = os.getenv("PINECONE_INDEX")
 # ==============================
 pc          = Pinecone(api_key=PINECONE_API_KEY)
 index       = pc.Index(INDEX_NAME)
-embed_model = SentenceTransformer("all-MiniLM-L6-v2")
+embed_model = SentenceTransformer("all-mpnet-base-v2")
 
 app = FastAPI(title="Vignan University MCP Server")
 
